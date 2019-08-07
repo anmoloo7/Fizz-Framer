@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Fizz-Framer an app starter template to start with any kind of app using only left and right side view with any ui available for web">
+  	<meta name="keywords" content="HTML,CSS,JavaScript,fizz,app,start,template,readymade,modular,custom,iframes,angular,dart,react,onsen,semantic,framework7,vue">
+  	<meta name="author" content="Anmol Kanojia">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>fizz</title>
+	<!--Don't change below css-->
+	<style type="text/css">
+		html {
+		            margin: 0;
+		            height: 100%;
+		            width: 300%;
+		        }
+		        
+		        body {
+		            margin: 0;
+		            height: 100%;
+		            width: 100%;
+		            scroll-behavior: smooth;
+		            overflow: hidden;
+		        }
+		 
+		        iframe {
+		            width: 33.3333%;
+		            height: 100%;
+		            border: 0;
+		            float: left;
+		           	overflow:hidden;
+		            background-color:#66ccff; 	/* Change it for default background color*/
+		        	background-image:url('images/loading.gif');
+		        	background-position: center center;
+		        	background-repeat: no-repeat;
+		        }
+	</style>
+	<script type="text/javascript">
+		//rearrange on resizing
+	    	window.onresize = function(){
+	    		window.location.href = window.location.href;
+			}
+	</script>
+</head>
+
+<body>
+	<iframe id="left"></iframe>
+	<iframe id="home" src="apps/_home/index.html"></iframe>
+	<iframe id="right"></iframe>
+</body>
+
+</html>

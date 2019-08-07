@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Fizz-Framer an app starter template to start with any kind of app using only left and right side view with any ui available for web">
+  	<meta name="keywords" content="HTML,CSS,JavaScript,fizz,app,start,template,readymade,modular,custom,iframes,angular,dart,react,onsen,semantic,framework7,vue">
+  	<meta name="author" content="Anmol Kanojia">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		html,body{
+				height:100%;
+				width:100%;
+				margin:0;
+			}
+	</style>
+	<!--Necessary to include fizz.js-->
+	<script type="text/javascript" src="../../js/fizz-0.0.1.js"></script>
+	<!--Your own tags,css,js should start from here-->
+	<title>Home</title>
+	<style type="text/css">
+		body{
+				margin:0;
+				background-color:#66ccff;
+				color:white;
+				text-align:center;
+			}
+	</style>
+</head>
+
+<body>
+	<h2>Home</h2>
+	<br />	<a onclick="runApp('settings','left')" href="">Settings Left</a>
+	<a onclick="runApp('settings','right')" href="">Settings Right</a>
+	<a onclick="runApp('appright','left')" href="">App Left</a>
+	<a onclick="runApp('appright','right')" href="">App Right</a>
+	<a onclick="back()" href="">Back</a>
+	<p>Menu can be here with links to apps.</p>
+</body>
+<script>
+	if(window.top.location.hash==""){
+			runApp('startup_screen','left');
+		}
+</script>
+
+</html>
