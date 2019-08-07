@@ -7,3 +7,8 @@
   Because of iframe we have freedom to choose any ui for a single app located in app folder.
   
   This is developed becuase i want to develop static pages as well as i want to include others but ui like onsen want other pages to have <ons-page>. Then what about normal pages? This comes to rescue.
+  
+  Run index.html to see demo and customize according to your needs. Good for noob developers like me.
+  
+  fizz.js
+  Small file with home() and back() for apps in apps folder.
